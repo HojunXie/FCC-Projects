@@ -2,9 +2,16 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+  background: #000;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
 #header {
   background: #000;
-  height: 7%;
+  height: 9%;
   width: 100%;
   position: fixed;
   top: 0;
@@ -14,16 +21,77 @@ html {
   color: white;
   font-size: x-large;
   align-items: center;
-  padding: 0 15px;
+  overflow: hidden;
 }
 
 .nav-link {
   cursor: pointer;
+  text-transform: capitalize;
+  color: #949494;
+  display: block;
+}
+
+.nav-link:hover {
+  color: white;
 }
 
 #nav-bar {
   display: flex;
   margin: 0 20px;
-  width: 15%;
+  width: 25%;
   justify-content: space-around;
+}
+
+#main {
+  width: 100%;
+  margin: 4.4% 0 0;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+  width: 33.4%;
+  max-height: 40vh;
+  background-color: white;
+  text-align: center;
+  padding: 3px 10px;
+}
+
+.cardDesc p {
+  margin: 3px;
+}
+
+.btnLikeCont {
+  background-color: #ff8c00;
+  width: 90%;
+  border-radius: 10px;
+  margin: 10px auto;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#header-img {
+  width: 9%;
+  margin: 0 20px;
+}
+
+#landing-img {
+  max-width: 100%;
+  display: block;
+}
+
+#landing-title {
+  top: 46%;
+  position: absolute;
+  font-size: 70px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  text-align: left;
+}
+
+#landing-title p {
+  margin: 2px;
 }
