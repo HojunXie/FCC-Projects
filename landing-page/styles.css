@@ -26,9 +26,11 @@ body {
 
 .nav-link {
   cursor: pointer;
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: #949494;
   display: block;
+  font-size: 15px;
+  text-decoration: none;
 }
 
 .nav-link:hover {
@@ -85,7 +87,7 @@ body {
 #landing-title {
   top: 46%;
   position: absolute;
-  font-size: 70px;
+  font-size: 60px;
   display: flex;
   flex-direction: column;
   margin-left: 10%;
@@ -94,4 +96,36 @@ body {
 
 #landing-title p {
   margin: 2px;
+}
+
+#description {
+  font-size: 25px;
+  margin: 5px 280px;
+}
+
+#form {
+  font-size: large;
+}
+
+#email {
+  width: 80%;
+  height: 30px;
+  outline-style: none;
+}
+
+#email:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #00AECD;
+}
+
+#submit {
+  background-color: #00AECD;
+  color: white;
+  height: 35px;
+  width: 15%;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #00aecd9a;
 }
