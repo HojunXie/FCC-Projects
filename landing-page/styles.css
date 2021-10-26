@@ -2,6 +2,10 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: #000;
   color: #fff;
@@ -22,6 +26,7 @@ body {
   font-size: x-large;
   align-items: center;
   overflow: hidden;
+  z-index: 2;
 }
 
 .nav-link {
@@ -50,30 +55,6 @@ body {
   text-align: center;
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  border-radius: 7px;
-  width: 33.4%;
-  max-height: 40vh;
-  background-color: white;
-  text-align: center;
-  padding: 3px 10px;
-}
-
-.cardDesc p {
-  margin: 3px;
-}
-
-.btnLikeCont {
-  background-color: #ff8c00;
-  width: 90%;
-  border-radius: 10px;
-  margin: 10px auto;
-  font-weight: bold;
-  cursor: pointer;
-}
-
 #header-img {
   width: 9%;
   margin: 0 20px;
@@ -85,7 +66,7 @@ body {
 }
 
 #landing-title {
-  top: 46%;
+  top: 40%;
   position: absolute;
   font-size: 60px;
   display: flex;
@@ -121,11 +102,72 @@ body {
 #submit {
   background-color: #00AECD;
   color: white;
-  height: 35px;
+  height: 30px;
   width: 15%;
   cursor: pointer;
 }
 
 #submit:hover {
   background-color: #00aecd9a;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  padding: 16px;
+  text-align: center;
+  color: #949494;
+  font-size: 25px;
+  background-color: inherit;
+}
+
+.card p {
+  margin: 4px auto;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.blue-text {
+  color: #00AECD;
+}
+
+#design {
+  background-color: #181818;
+  padding: 10px 0;
+}
+
+#features .column {
+  width: 33.3%;
+}
+
+#features .card {
+  color: #fff;
+  font-size: 18px;
+  background-color: #1a1a1a;
+  padding: 1px 20px;
+}
+
+#features .card p {
+  margin: 20px auto;
+}
+
+#video {
+  margin: 15px;
 }
