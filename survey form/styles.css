@@ -1,0 +1,101 @@
+html {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-image: URL('https://media.istockphoto.com/photos/man-speaking-at-a-business-conference-picture-id499517325?b=1&k=20&m=499517325&s=170667a&w=0&h=jMCaZov25c5VR1CP-4axUdJPEKSpBWbzzWAubQS3-oo=');
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 50px 0;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+#title {
+  text-align: center;
+  color: white;
+  margin: 10px 0;
+}
+
+#description {
+  text-align: center;
+  color: white;
+  margin: 10px 0;
+}
+
+#survey-form {
+  width: 35%;
+  margin: auto;
+  padding: 25px;
+  background-color: rgb(250, 153, 7);
+  opacity: 0.98;
+  border-radius: 1%;
+}
+
+#main {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  color: white;
+  position: absolute;
+}
+
+#overlay {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(66, 209, 9, 0.2);
+  position: fixed;
+}
+
+.fieldContainers {
+  width: 100%;
+  margin: 2px 0;
+}
+
+input, select, textarea {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  margin: auto;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+input {
+  width: 99%;
+  height: 30px;
+}
+
+label {
+  display: block;
+  margin: 5px 0;
+}
+
+textarea {
+  width: 99%;
+  height: auto;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  font-size: larger;
+  background-color: #37af47;
+  opacity: 1;
+  margin-bottom: 10px;
+}
+
+.exception label, .exception input {
+  display: inline;
+  margin: 0 5px;
+  height: 1rem;
+  width: 20px;
+}
