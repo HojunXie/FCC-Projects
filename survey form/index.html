@@ -11,23 +11,16 @@
   <title>FCC: Survey Form</title>
 </head>
 <body>
-  <div id='main'>
+  <main>
     <h1 id="title">Great Tour Survey Form</h1>
     <p id="description">Thank you for choosing our tour services. Help us improve!</p>
     <form id="survey-form">
-      <div class="fieldContainers">
-        <label for='name' id='name-label'>Name:</label>
-        <input type="text" id='name' name='name' placeholder="Your name here" required>
-      </div>
-      <div class="fieldContainers">
-        <label for='email' id='email-label'>Email:</label>
-        <input type="email" id='email' name='email' placeholder="Your email here" required>
-      </div>
-      <div class="fieldContainers">
-        <label for='number' id='number-label'>Age:</label>
-        <input type="number" id='number' name='age' min=1 max=100 placeholder="Your age here">
-      </div>
-      <div class="fieldContainers">
+      <fieldset>
+        <label for='name' id='name-label'>Name: <input type="text" id='name' name='name' placeholder="Your name here" required></label>
+        <label for='email' id='email-label'>Email: <input type="email" id='email' name='email' placeholder="Your email here" required></label>
+        <label for='number' id='number-label'>Age: <input type="number" id='number' name='age' min=1 max=100 placeholder="Your age here"></label>
+      </fieldset>
+      <fieldset>
         <label for='age' id='dropdown-label'>Package:</label>
         <select id='dropdown'>
           <option>Choose your trip package</option>
@@ -36,52 +29,29 @@
           <option value='groups'>Groups Trip</option>
           <option value='solo'>Solo Trip</option>
         </select>
-      </div>
-      <div class="exception">
-        <p>Would you recommend Great Tour to a friend?</p>
-        <div class="fieldContainers">
-          <input type="radio" name="recommend" value="YES" checked>
-          <label for="YES">Yes, Definitely</label>
-        </div>
-        <div class="fieldContainers">
-          <input type="radio" name="recommend" value="Maybe">
-          <label for="Maybe">Maybe</label>
-        </div>
-        <div class="fieldContainers">
-          <input type="radio" name="recommend" value="NO">
-          <label for="NO">No</label>
-        </div>
-      </div>
-      <div class="exception">
-        <p>What would you like to see improve?</p>
-        <div class="fieldContainers">
-          <input type="checkbox" name="service1" value="Services">
-          <label for="service1">Tour Services</label>
-        </div>
-        <div class="fieldContainers">
-          <input type="checkbox" name="service2" value="F&B">
-          <label for="service2">Food & Beverages</label>
-        </div>
-        <div class="fieldContainers">
-          <input type="checkbox" name="service3" value="Accomodation">
-          <label for="service3">Accomodation</label>
-        </div>
-        <div class="fieldContainers">
-          <input type="checkbox" name="service4" value="Schedule">
-          <label for="service4">Schedule</label>
-        </div>
-        <div class="fieldContainers">
-          <input type="checkbox" name="service5" value="Transportation">
-          <label for="service5">Transportation</label>
-        </div>
-      </div>
-      <div class="fieldContainers">
-        <p>Help us improve:</p>
-        <textarea rows="4" placeholder="Your feedback here"></textarea>
-      </div>
-      <button id="submit" type="submit">submit</button>
+      </fieldset>
+      <fieldset>
+          <label>Would you recommend Great Tour to a friend?</label>
+          <label for="YES"><input class="inline" type="radio" name="recommend" value="YES" checked>Yes, Definitely</label>
+          <label for="Maybe"><input class="inline" type="radio" name="recommend" value="Maybe">Maybe</label>
+          <label for="NO"><input class="inline" type="radio" name="recommend" value="NO">No</label>
+        </fieldset>
+        <fieldset>
+          <label>What would you like to see improve?</label>
+          <label for="service1"><input class="inline" type="checkbox" name="service1" value="Services">Tour Services</label>
+          <label for="service2"><input class="inline" type="checkbox" name="service2" value="F&B">Food & Beverages</label>
+          <label for="service3"><input class="inline" type="checkbox" name="service3" value="Accomodation">Accomodation</label>
+          <label for="service4"><input class="inline" type="checkbox" name="service4" value="Schedule">Schedule</label>
+          <label for="service5"><input class="inline" type="checkbox" name="service5" value="Transportation">Transportation</label>
+      </fieldset>
+      <fieldset>
+        <label>Help us improve:
+          <textarea rows="4" placeholder="Your feedback here"></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit">
     </form>
-  </div>
+  </main>
 
   <div id=overlay></div>
 </body>
